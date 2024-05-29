@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "grocery-sales-forecasting"
+version = "0.1.0"
+description = ""
+authors = ["Faraz Ghasemzadeh <faraz.g2000@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "grocery_sales_forecasting" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+kaggle = "^1.6.14"
+py7zr = "^0.21.0"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+scikit-learn = "^1.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.4"
+matplotlib = "^3.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
